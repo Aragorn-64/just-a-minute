@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAM</title>
+    <!-- Import Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="container">
+
+    <div id="setupForm">
+        <h3>Samvaad's</h3>
+        <h1>Just a Minute</h1>
+        <div class="form-group">
+            <label for="numPlayers">Number of players</label>
+            <input type="number" class="form-control" id="numPlayers" placeholder="Enter number of players">
+        </div>
+        
+        <button class="btn btn-primary" onclick="createGrid()">Start</button>
+    </div>
+    
+    <div id="clock" class="clock mt-4 d-none">
+        <span id="minutes">00</span>:<span id="seconds">00</span>
+    </div>
+
+    <div id="playerGrid" class="row mt-4 d-none">
+        <!-- Player buttons with timers will be dynamically inserted here -->
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
